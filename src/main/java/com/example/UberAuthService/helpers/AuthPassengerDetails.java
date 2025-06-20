@@ -22,7 +22,12 @@ public class AuthPassengerDetails extends Passenger implements UserDetails {
 
     @Override
     public String getUsername() {
-        return username;
+        return this.username;
+    }
+
+    @Override
+    public String getPassword() {
+        return this.password;
     }
 
     @Override
