@@ -36,6 +36,10 @@ public class JwtService implements CommandLineRunner {
                 .compact();
     }
 
+    public String createToken(String email){
+        return createToken(new HashMap<>(), email);
+    }
+
     public Key getSignkey(){
         return Keys.hmacShaKeyFor(SECRET.getBytes(StandardCharsets.UTF_8));
     }
