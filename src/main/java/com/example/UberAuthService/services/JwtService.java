@@ -86,7 +86,7 @@ public class JwtService implements CommandLineRunner {
         mp.put("email", "a@b.com");
         mp.put("phoneNumber", "737383920");
         String result = createToken(mp, "saeel");
-        System.out.println("Generated token is : " + result);
+        //System.out.println("Generated token is : " + result);
         System.out.println(extractPayload(result, "email").toString());
     }
 }
